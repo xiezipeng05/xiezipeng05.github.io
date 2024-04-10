@@ -13,16 +13,16 @@ parts:
     - file: functions/interactive_design/interactive_design.md
     - file: functions/architecture_design/architecture_design.md
       sections:
-        - file: functions/architecture_design/software_architecture/software_architecture.md
+        - file: functions/architecture_design/softwares_architectures/softwares_architectures.md
           sections:
-            - file: functions/architecture_design/software_architecture/business_modeling/business_modeling.md
+            - file: functions/architecture_design/softwares_architectures/business_modeling/business_modeling.md
               sections:
-                - file: functions/architecture_design/software_architecture/business_modeling/domain_driven_design/domain_driven_design.md
-                - file: functions/architecture_design/software_architecture/business_modeling/event_driven_design/event_driven_design.md
-            - file: functions/architecture_design/software_architecture/technical_selection/technical_selection.md
+                - file: functions/architecture_design/softwares_architectures/business_modeling/domain_driven_design/domain_driven_design.md
+                - file: functions/architecture_design/softwares_architectures/business_modeling/event_driven_design/event_driven_design.md
+            - file: functions/architecture_design/softwares_architectures/technical_selection/technical_selection.md
               sections:
-                - file: functions/architecture_design/software_architecture/technical_selection/users_side_selection/users_side_selection.md
-                - file: functions/architecture_design/software_architecture/technical_selection/web_side_selection/web_side_selection.md
+                - file: functions/architecture_design/softwares_architectures/technical_selection/users_side_selection/users_side_selection.md
+                - file: functions/architecture_design/softwares_architectures/technical_selection/web_side_selection/web_side_selection.md
     - file: functions/client_side_development/client_side_development.md
     - file: functions/server_side_development/server_side_development.md
     - file: functions/technical_writing/technical_writing.md
