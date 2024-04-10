@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>领域驱动设计 &#8212; 量潮产品研发手册</title>
+    <title>事件驱动设计 &#8212; 量潮产品研发手册</title>
   
   
   
@@ -57,9 +57,11 @@
     <script async="async" src="../../../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'functions/architecture_design/Software_Architecture/Business_Modeling/Domain_Driven_Design/Domain_Driven_Design';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'functions/architecture_design/softwares_architectures/business_modeling/event_driven_design/event_driven_design';</script>
     <link rel="index" title="Index" href="../../../../../genindex.html" />
     <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="技术选型" href="../../technical_selection/technical_selection.html" />
+    <link rel="prev" title="领域驱动设计" href="../domain_driven_design/domain_driven_design.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +123,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -171,14 +171,27 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">职能</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../../project_management/project_management.html">项目管理</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../../project_management/process_for_validating_engineering_standards/process_for_validating_engineering_standards.html">验证工程标准的流程</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../project_management/quality_assurance/quality_assurance.html">审核监管</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../product_planning/product_planning.html">产品策划</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../architecture_design.html">架构设计</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="simple">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../../architecture_design.html">架构设计</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../../softwares_architectures.html">软件架构</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l3 current active has-children"><a class="reference internal" href="../business_modeling.html">业务建模</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../domain_driven_design/domain_driven_design.html">领域驱动设计</a></li>
+<li class="toctree-l4 current active"><a class="current reference internal" href="#">事件驱动设计</a></li>
+</ul>
+</li>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../technical_selection/technical_selection.html">技术选型</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../technical_selection/users_side_selection/users_side_selection.html">客户端选型</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../technical_selection/web_side_selection/web_side_selection.html">Web端选型</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../../../client_side_development/client_side_development.html">客户端开发</a></li>
@@ -187,7 +200,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">协作</span></p>
 <ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../interactive_works/product_panorama/product_panorama.html">产品全景图</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../../../interactive_works/product_panorama/product_panorama.html">产品全景图</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../../../interactive_works/product_panorama/users_story_documents/users_story_documents.html">用户故事文档</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../../../interactive_works/product_panorama/users_story_maps/users_story_maps.html">用户文档地图</a></li>
 </ul>
@@ -249,7 +262,7 @@
       
       
       
-      <li><a href="../../../../../_sources/functions/architecture_design/Software_Architecture/Business_Modeling/Domain_Driven_Design/Domain_Driven_Design.md" target="_blank"
+      <li><a href="../../../../../_sources/functions/architecture_design/softwares_architectures/business_modeling/event_driven_design/event_driven_design.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -331,7 +344,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>领域驱动设计</h1>
+    <h1>事件驱动设计</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -346,8 +359,10 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>领域驱动设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>主要有两种范式，传统方式围绕领域模型，现代方式围绕上下文。</p>
+<h1>事件驱动设计<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>strategic driven，not model driven
+前者对事件风暴（设计）和事件溯源（实现）比较友好，后者对工程标准比较友好。
+也可以进一步改进工程标准，以一个Aggregate为单位，领域模型后面介绍领域事件和API，</p>
 </section>
 
     <script type="text/x-thebe-config">
@@ -363,7 +378,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./functions/architecture_design/Software_Architecture/Business_Modeling/Domain_Driven_Design"
+            path: "./functions/architecture_design/softwares_architectures/business_modeling/event_driven_design"
         },
         predefinedOutput: true
     }
@@ -380,6 +395,24 @@ document.write(`
                 <footer class="prev-next-footer">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="../domain_driven_design/domain_driven_design.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">领域驱动设计</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../technical_selection/technical_selection.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">技术选型</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
