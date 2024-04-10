@@ -10,7 +10,7 @@ parts:
         - file: functions/project_management/process_for_validating_engineering_standards/process_for_validating_engineering_standards.md
         - file: functions/project_management/quality_assurance/quality_assurance.md
     - file: functions/product_planning/product_planning.md
-    - file: functions/interactive_design/interactive_design.md
+    - file: functions/interactive_designs/interactive_designs.md
     - file: functions/architecture_design/architecture_design.md
       sections:
         - file: functions/architecture_design/softwares_architectures/softwares_architectures.md
